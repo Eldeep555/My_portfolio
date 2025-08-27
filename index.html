@@ -93,13 +93,30 @@
 
         /* Hero Section */
         .hero {
-            min-height: 100vh;
-            background: var(--gradient-primary);
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
+    min-height: 100vh;
+    background: url('b-c.jpg') center/cover no-repeat; /* Example image from Unsplash */
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6); /* Adjust the opacity here */
+    z-index: 1; /* Ensure the overlay is above the background but below the content */
+}
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+    text-align: center;
+    color: #333; /* Change text color for better visibility */
+}
+
 
         .hero::before {
             content: '';
@@ -108,7 +125,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0cc033af-a5ec-4ab9-a7a5-66689a2c87f1.png') center/cover;
+            background: url('back-grownd.jpg') center/cover;
             opacity: 0.1;
         }
 
@@ -699,4 +716,7 @@
     </script>
 </body>
 </html>
+
+
+
 
